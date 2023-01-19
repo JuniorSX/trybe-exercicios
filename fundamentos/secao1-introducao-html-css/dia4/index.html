@@ -5,6 +5,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ranking</title>
     <style>
+        body{
+            text-align: center;
+        }
+        ul.rank{
+            width: 600px;
+            height:100px;
+            margin: 0 auto;
+        }
+        li{
+            list-style-type:none;
+        }
+        ul.prize li{
+            display: inline-block;
+        }
       h1 {
         text-align: center;
       }
@@ -15,6 +29,7 @@
         height: 50px;
         text-align: center;
         width: 200px;
+        margin:0 auto;
       }
 
       .second {
@@ -23,6 +38,7 @@
         height: 50px;
         text-align: center;
         width: 300px;
+        float:left;
       }
 
       .third {
@@ -31,6 +47,7 @@
         height: 50px;
         text-align: center;
         width: 300px;
+        float:right;
       }
 
     </style>
@@ -40,7 +57,7 @@
       <h1>Hackathon Results</h1>
     </header>
     <section>
-      <ul>
+      <ul class="rank">
         <li class="first">1º - Equipe 1</li>
         <li class="second">2º - Equipe 2</li>
         <li class="third">3º - Equipe 3</li>
@@ -48,17 +65,17 @@
     </section>
     <section>
       <h3>Premiação Primeiro Lugar:</h3>
-      <ul>
+      <ul class="prize">
         <li>| R$ 1000,00 por integrante da equipe |</li>
         <li>| Bootcamp de 2 meses com possibilidade de contratação |</li>
       </ul>
       <h3>Premiação Segundo Lugar:</h3>
-      <ul>
+      <ul class="prize">
         <li>| R$ 600,00 por integrante da equipe |</li>
         <li>| Participação no processo seletivo para o Bootcamp |</li>
       </ul>
       <h3>Premiação Terceiro Lugar:</h3>
-      <ul>
+      <ul class="prize">
         <li>| R$ 300,00 por integrante da equipe |</li>
         <li>| Participação no processo seletivo para o Bootcamp |</li>
       </ul>
