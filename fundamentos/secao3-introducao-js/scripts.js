@@ -107,16 +107,32 @@ console.log(notaAluno); */
 let numbers = [5, 9, 3, 19, 70, 8, 100, 2, 35, 27];
 let somaArray = 0;
 let mediaArray = 0;
+let numeroMaior = 0;
+let quantosImpares = 0;
 
 for(let index = 0; index < numbers.length; index += 1){
     console.log(numbers[index]);
     somaArray += numbers[index];
     mediaArray = somaArray / numbers.length;
+    if (numbers[index] >= numeroMaior){
+        numeroMaior = numbers[index]
+    }
 }
 console.log("Soma dos numeros = " + somaArray);
 console.log("Média aritmética = " + mediaArray);
+console.log("O maior numero do Array é = " + numeroMaior);
 if(mediaArray > 20){
     console.log("valor maior que 20");
 }else{
     console.log("valor menor ou igual a 20");
+}
+for(let index = 0; index < numbers.length; index += 1){
+    if(numbers[index] % 2 !== 0){
+        quantosImpares = quantosImpares +1;
+    }
+}
+if(quantosImpares > 0){
+    console.log("Existem " + quantosImpares + " numeros ímpares");
+}else{
+    console.log("Nenhum valor ímpar encontrado");
 }
