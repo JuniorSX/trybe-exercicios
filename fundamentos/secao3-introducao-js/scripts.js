@@ -84,7 +84,7 @@ switch(pecaXadrez){
         console.log('Peça inválida');
 }    */
 
-let valor = 150;
+/* let valor = 150;
 if (valor < 0 || valor > 100){
     notaAluno = 'Erro: nota inválida'
 } else if(valor >= 80){
@@ -102,4 +102,21 @@ if (valor < 0 || valor > 100){
 }else{
     notaAluno = 'Insira o valor da nota'
 }
-console.log(notaAluno);
+console.log(notaAluno); */
+
+let numbers = [5, 9, 3, 19, 70, 8, 100, 2, 35, 27];
+let somaArray = 0;
+let mediaArray = 0;
+
+for(let index = 0; index < numbers.length; index += 1){
+    console.log(numbers[index]);
+    somaArray += numbers[index];
+    mediaArray = somaArray / numbers.length;
+}
+console.log("Soma dos numeros = " + somaArray);
+console.log("Média aritmética = " + mediaArray);
+if(mediaArray > 20){
+    console.log("valor maior que 20");
+}else{
+    console.log("valor menor ou igual a 20");
+}
