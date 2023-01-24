@@ -58,7 +58,7 @@ if (positivos) {
     console.log("Erro: Angulo inválido");
 } */
 
-let pecaXadrezDigitada = "Peão";
+/* let pecaXadrezDigitada = "Peão";
 let pecaXadrez = pecaXadrezDigitada.toLowerCase();
 
 switch(pecaXadrez){
@@ -82,4 +82,24 @@ switch(pecaXadrez){
     break;
     default:
         console.log('Peça inválida');
-}   
+}    */
+
+let valor = 150;
+if (valor < 0 || valor > 100){
+    notaAluno = 'Erro: nota inválida'
+} else if(valor >= 80){
+    notaAluno = 'Nota do Aluno: B'
+} else if(valor >= 70){
+    notaAluno = 'Nota do Aluno: C'
+} else if(valor >= 60){
+    notaAluno = 'Nota do Aluno: D'
+} else if(valor >= 50){
+    notaAluno = 'Nota do Aluno: E'
+} else if(valor < 50){
+    notaAluno = 'Nota do Aluno: F'
+}else if(valor >= 90){
+    notaAluno = 'Nota do Aluno: A'
+}else{
+    notaAluno = 'Insira o valor da nota'
+}
+console.log(notaAluno);
