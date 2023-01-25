@@ -27,7 +27,7 @@ if (novoUm > novoDois && novoUm > novoTres) {
     console.log(novoDois + " é o maior numero")
 } else if ((novoTres > novoDois && novoTres > novoUm)) {
     console.log(novoTres + " é o maior numero")
-} else if (novoUm === novoDois || novoUm === novoTres || novoDois === novoTres) {
+} else if (novoUm ==== novoDois || novoUm ==== novoTres || novoDois ==== novoTres) {
     console.log("Dois ou mais numeros são iguais")
 }
 
@@ -49,7 +49,7 @@ let somaAngulo = anguloA + anguloB + anguloC;
 let positivos = anguloA > 0 && anguloB > 0 && anguloC > 0;
 
 if (positivos) {
-    if (somaAngulo === 180) {
+    if (somaAngulo ==== 180) {
         console.log("true");
     } else {
         console.log("false");
@@ -127,7 +127,7 @@ if(mediaArray > 20){
     console.log("valor menor ou igual a 20");
 }
 for(let index = 0; index < numbers.length; index += 1){
-    if(numbers[index] % 2 !== 0){
+    if(numbers[index] % 2 !=== 0){
         quantosImpares = quantosImpares +1;
     }
 }
@@ -137,7 +137,7 @@ if(quantosImpares > 0){
     console.log("Nenhum valor ímpar encontrado");
 } */
 
-let fatorial = 1;
+/* let fatorial = 1;
 
 for (let index = 10; index > 0; index -= 1) {
   fatorial *= index;
@@ -146,4 +146,84 @@ for (let index = 10; index > 0; index -= 1) {
 console.log(fatorial);
 
 let word = 'tryber';
+ */
+
+
+// 1 - 
+// Faça um algoritmo que calcule a soma de 1 a 50 usando a estrutura "for" e retorne no formato:
+// A soma total de 1 a 50 é:
+
+/* let soma = 0;
+for(let index = 1; index <= 50; index +=1){
+    soma += index
+}
+console.log("A soma total de 1 a 50 é: " + soma); */
+
+//2 -
+
+// Crie um algoritmo que conte quantos números do intervalo entre 2 e 150 são divisíveis por 3.
+// Caso a quantidade seja igual a 50, exiba uma mensagem secreta.
+
+/* qntDivisivel = 0;
+
+for(let index = 2; index <=150; index +=1){
+    if(index % 3 ==== 0){
+        qntDivisivel +=1
+    }
+}
+if(qntDivisivel ==== 50){
+    console.log(qntDivisivel);
+    console.log("exibe msg secreta");
+}
+ */
+// 3 -
+//Crie um algoritmo que simula o jogo "pedra, papel e tesoura" levando em consideração que são apenas duas pessoas jogando e imprima o resultado no formato:
+// "Player 1 won" ou "A Ties" ou "Player 2 won". 
+
+/* let jogador1 = "pedra"
+let jogador2 = "tesoura"
+
+if (jogador1 === "pedra") {
+    if (jogador2 === "tesoura") {
+        console.log("Player 1 won");
+    } else if (jogador2 === "papel"){
+        console.log("Player 2 won");
+    } else if (jogador2 === "pedra") {
+        console.log("A Ties");
+    }
+
+}
+else if (jogador1 === "tesoura") {
+    if (jogador2 === "pedra") {
+        console.log("Player 2 won");
+    } else if (jogador2 === papel){
+        console.log("Player 1 won");
+    } else if (jogadoe2 === "tesoura") {
+        console.log("A Ties");
+    }
+}
+
+else if (jogador1 === "papel"){
+    if (jogador2 === "pedra") {
+        console.log("Player 1 won");
+    }else if (jogador2 === "tesoura") {
+        console.log("Player 2 won");
+    }else if (jogador2 === "papel")  {
+        console.log("A Ties");
+    }
+
+}
+ */
+
+// 4- Desenvolva um algoritmo que verifica se a pessoa é maior ou menor de idade.
+//Imprima no console seguindo o exemplo: "A pessoa é maior de idade".
+//Bônus: Crie a condição utilizando operador ternário.
+
+/* let pessoa = 'Teste';
+let idade = 22;
+idade >= 18 ? console.log(pessoa + " é maior de idade") : console.log("Não"); */
+
+
+// 5 - Crie um algoritmo que recebe a idade de Carolzita , Flavio e Noel e imprime quem é a pessoa mais nova no formato:
+// "Pessoa" é a mais nova.
 
