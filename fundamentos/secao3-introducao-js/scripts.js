@@ -104,7 +104,7 @@ if (valor < 0 || valor > 100){
 }
 console.log(notaAluno); */
 
-let numbers = [5, 9, 3, 19, 70, 8, 100, 2, 35, 27];
+/* let numbers = [5, 9, 3, 19, 70, 8, 100, 2, 35, 27];
 let somaArray = 0;
 let mediaArray = 0;
 let numeroMaior = 0;
@@ -135,4 +135,15 @@ if(quantosImpares > 0){
     console.log("Existem " + quantosImpares + " numeros ímpares");
 }else{
     console.log("Nenhum valor ímpar encontrado");
+} */
+
+let fatorial = 1;
+
+for (let index = 10; index > 0; index -= 1) {
+  fatorial *= index;
 }
+
+console.log(fatorial);
+
+let word = 'tryber';
+
