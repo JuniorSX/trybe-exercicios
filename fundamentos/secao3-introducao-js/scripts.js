@@ -244,7 +244,37 @@ player['fullName'] = player.name + ' ' + player.lastName;
 player['bestInTheWorld'] = [2006, 2007, 2008, 2009, 2010, 2018]
 
 console.log('A jogadora ' + player['fullName'] + ' tem ' + player.age + ' anos de idade');
+
 // Acesse as chaves name, lastName e age, usando a sintaxe meuObjeto.chave, e concatene as suas informações para imprimir no console uma mensagem no seguinte formato: “A jogadora Marta Silva tem 34 anos de idade”.
 
 console.log('A jogadora ' + player['fullName'] + ' foi eleita a melhor do mundo por ' + player.bestInTheWorld.length + ' vezes');
 console.log('A jogadora possui ' + player.medals['golden'] + ' medalhas de ouro e ' + player.medals.silver + ' medalhas de prata' );
+
+
+// Usando o objeto abaixo, utilize for/in e imprima no console a mensagem 'Olá xxxxx' para cada nome, substituindo o xxxxx pelo nome em questão.
+let names = {
+    person1: 'João',
+    person2: 'Maria',
+    person3: 'Jorge',
+  };
+  for (let key in names) {
+    console.log("Olá " + names[key]);    
+  }
+
+
+//Usando o objeto abaixo, utilize for/in e imprima um console.log com as chaves e valores desse objeto.
+  let car = {
+    model: 'A3 Sedan',
+    manufacturer: 'Audi',
+    year: 2020
+  };
+
+  for (let key in car) {
+    console.log(key + ' ' + car[key]);    
+  }
+
+  function sum(a, b) {
+    a + b;
+  }
+  console.log(sum(1, 2));
+
